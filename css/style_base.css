@@ -23,14 +23,25 @@ header {
   color: var(--white);
   padding: 0.5rem 1.25rem;
   /*Añadimos flex*/
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
 }
 
 header nav ul {
   /*Añadimos flex*/
+  display: flex;
+  gap: 15px;
+  
+  
 }
 
 header .header__logo {
   /*Añadimos flex*/
+  display: flex;
+  align-items: center;
+  gap:10px;
 }
 
 header .header__logo span,
@@ -50,6 +61,11 @@ main {
 
 main .container {
   /*Añadimos flex*/
+  display: flex;
+  flex-wrap:wrap;
+  justify-content: center;
+  gap:10px;
+
 }
 
 main section .card {
@@ -88,32 +104,51 @@ main section .podio h3 {
 
 .top5 {
   /*Añadimos flex*/
+  display: flex;
+ justify-content: space-around;
+
 }
 
 .top5 .podio__pizzas ol li {
   padding: 10px 0px;
+  
+  
+  
+  
 }
 
 .top5 .podio__img {
   padding-bottom: 60px;
   /*Añadimos flex*/
+  display: flex;
+ 
 }
 
 footer {
   background: #222;
   padding: 19px 20px;
   /*Añadimos flex*/
+  display: flex;
+  justify-content: space-between;
 }
 
 footer .footer__logo {
   color: var(--lightWhite);
   font-size: 14px;
   /*Añadimos flex*/
+  display: flex;
+  order:1;
+ align-items: center;
+ gap: 10px;
 }
 
 footer ul {
   color: var(--lightWhite);
   /*Añadimos flex*/
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+  align-content:flex-end;
 }
 
 @media screen and (max-width:  768px) {
